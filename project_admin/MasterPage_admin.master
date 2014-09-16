@@ -1,0 +1,131 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage_admin.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<script runat="server">
+
+    
+</script>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+            height: 119px;
+            margin-right: 0px;
+        }
+        .style4
+        {
+            width: 76%;
+            height: 324px;
+            background-color: #FFFFFF;
+        }
+        .style5
+        {
+            width: 127px;
+            background-color: #E4E4E4;
+        }
+        .style6
+        {
+            height: 23px;
+        }
+        .style7
+        {
+            height: 119px;
+        }
+        .style8
+        {
+            height: 51px;
+            background-color: #333399;
+        }
+        .style9:hover
+        {
+            background: #8330D6
+            
+        }
+        .style9
+        {
+            width: 100%;
+        }
+    </style>
+</head>
+<body background="dimension.png">
+    <form id="form1" runat="server">
+    <table align="center" class="style1">
+        <tr>
+            <td bgcolor="#009933" class="style8" valign="top">
+                <table class="style9">
+                    <tr>
+                        <td>
+                            <asp:ImageButton ID="ImageButton1" runat="server" Height="50px" 
+                                ImageAlign="Left" ImageUrl="~/admin.png" Width="342px" />
+                        </td>
+                        <td>
+                            <asp:ImageButton ID="ImageButton2" runat="server" Height="50px" 
+                                ImageAlign="Right" ImageUrl="~/logo.png" Width="300px" 
+                                style="margin-left: 0px" />
+                        </td>
+                    </tr>
+                </table>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">
+                <asp:Button ID="Button1" runat="server" Text="ELECTRONICS" Width="19.5%" 
+                    Height="40px" onclick="Button1_Click1" 
+                    style="font-weight: 700; font-size: medium; color: #FFFFFF; font-family: 'Calibri Light'; background-color: #6600CC" />
+                &nbsp;<asp:Button ID="Button2" runat="server" Text="MENS'" Height="40px" 
+                    onclick="Button2_Click" 
+                    style="font-weight: 700; font-size: medium; font-family: 'Calibri Light'; color: #FFFFFF; background-color: #6600CC" 
+                    Width="19.5%" />
+                &nbsp;<asp:Button ID="Button3" runat="server" Text="WOMENS'" Height="40px" 
+                    onclick="Button3_Click" 
+                    style="font-weight: 700; font-size: medium; color: #FFFFFF; font-family: 'Calibri Light'; background-color: #6600CC" 
+                    Width="19.5%" />
+                &nbsp;<asp:Button ID="Button4" runat="server" Text="BOOKS &amp; MEDIA" 
+                    Height="40px" onclick="Button4_Click" 
+                    style="color: #FFFFFF; font-weight: 700; font-size: medium; font-family: 'Calibri Light'; background-color: #6600CC" 
+                    Width="19.5%" />
+                &nbsp;<asp:Button ID="Button5" runat="server" Text="SALE" Height="40px" 
+                    onclick="Button5_Click" 
+                    style="font-weight: 700; font-size: medium; color: #FFFFFF; font-family: 'Calibri Light'; background-color: #6600CC" 
+                    Width="19.6%" />
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td class="style6">
+                &nbsp;</td>
+        </tr>
+    </table>
+    <table align="center" class="style4">
+        <tr>
+            <td class="style5" rowspan="2" valign="top">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat="server">
+                </asp:ContentPlaceHolder>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </td>
+            <td class="style7" valign="top">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
